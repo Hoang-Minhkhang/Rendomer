@@ -95,6 +95,7 @@
 			label4.Size = new Size(182, 25);
 			label4.TabIndex = 5;
 			label4.Text = "Số may mắn chính là ";
+			label4.Click += label4_Click;
 			// 
 			// label5
 			// 
