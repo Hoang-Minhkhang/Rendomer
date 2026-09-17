@@ -11,7 +11,7 @@ namespace Rendomer
 		{
 
 		}
-
+		private string history = "Hoang-MinhKhang Rendomer \n ";
 		private void button1_Click(object sender, EventArgs e)
 		{
 			try
@@ -29,6 +29,8 @@ namespace Rendomer
 				int ketQua = rnd.Next(min, max + 1); // max + 1 để lấy cả giá trị cuối
 
 				label5.Text = ketQua.ToString();
+				history += $"Đã gọi số  {ketQua} vào {DateTime.Now}\n";
+				richTextBox1.Text = history;
 			}
 			catch
 			{
@@ -38,6 +40,11 @@ namespace Rendomer
 		}
 
 		private void label4_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
 		{
 
 		}

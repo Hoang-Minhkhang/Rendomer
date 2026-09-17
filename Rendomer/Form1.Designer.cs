@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			components = new System.ComponentModel.Container();
 			label1 = new Label();
 			label2 = new Label();
 			label3 = new Label();
@@ -36,6 +37,8 @@
 			label4 = new Label();
 			label5 = new Label();
 			button1 = new Button();
+			richTextBox1 = new RichTextBox();
+			notifyIcon1 = new NotifyIcon(components);
 			SuspendLayout();
 			// 
 			// label1
@@ -101,7 +104,7 @@
 			// 
 			label5.AutoSize = true;
 			label5.Font = new Font("Segoe UI Semibold", 58F, FontStyle.Bold);
-			label5.Location = new Point(292, 184);
+			label5.Location = new Point(369, 200);
 			label5.Name = "label5";
 			label5.Size = new Size(106, 104);
 			label5.TabIndex = 6;
@@ -120,11 +123,26 @@
 			button1.UseVisualStyleBackColor = false;
 			button1.Click += button1_Click;
 			// 
+			// richTextBox1
+			// 
+			richTextBox1.Location = new Point(10, 200);
+			richTextBox1.Name = "richTextBox1";
+			richTextBox1.Size = new Size(266, 147);
+			richTextBox1.TabIndex = 8;
+			richTextBox1.Text = "";
+			// 
+			// notifyIcon1
+			// 
+			notifyIcon1.Text = "notifyIcon1";
+			notifyIcon1.Visible = true;
+			notifyIcon1.MouseDoubleClick += notifyIcon1_MouseDoubleClick;
+			// 
 			// Form1
 			// 
 			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
 			ClientSize = new Size(597, 368);
+			Controls.Add(richTextBox1);
 			Controls.Add(button1);
 			Controls.Add(label5);
 			Controls.Add(label4);
@@ -133,8 +151,9 @@
 			Controls.Add(label3);
 			Controls.Add(label2);
 			Controls.Add(label1);
+			MaximizeBox = false;
 			Name = "Form1";
-			Text = "Rendomer VERISON 1.0 by Hoang-MinhKhang";
+			Text = "Rendomer VERISON 1.0 by Hoang-MinhKhang 11B1.08 ";
 			Load += Form1_Load;
 			ResumeLayout(false);
 			PerformLayout();
@@ -150,5 +169,7 @@
 		private Label label4;
 		private Label label5;
 		private Button button1;
+		private RichTextBox richTextBox1;
+		private NotifyIcon notifyIcon1;
 	}
 }
